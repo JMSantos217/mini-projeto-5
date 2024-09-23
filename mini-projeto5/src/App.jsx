@@ -1,14 +1,7 @@
-
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './App.css';
-import SatisfactionsCards from './SatisfactionsCards';
-
-// src/App.js
-import { useState, useEffect } from 'react';
-import axios from 'axios';
-import './App.css'; // Importando o CSS
-import SatisfactionsCards from './components/SatisfactionsCards'; // Importando o componente
+import SatisfactionsCards from './components/SatisfactionsCards';
 
 export default function App() {
   const [satisfactions, setSatisfactions] = useState([]);
@@ -16,7 +9,7 @@ export default function App() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    async function buscarSatisfactions() {
+    const loadSatisfactions = async () => {
       try {
         const response = await axios.get('http://localhost:5000/satisfaction');
         setSatisfactions(response.data.satisfaction);
@@ -26,9 +19,9 @@ export default function App() {
         setError('Erro ao buscar satisfações');
         setLoading(false);
       }
-    }
+    };
 
-    buscarSatisfactions();
+    loadSatisfactions();
   }, []);
 
   if (loading) {
@@ -60,10 +53,3 @@ export default function App() {
     </div>
   );
 }
-
-
-
-
-
-
-

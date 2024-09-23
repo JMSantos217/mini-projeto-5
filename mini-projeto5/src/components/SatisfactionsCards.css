@@ -1,0 +1,27 @@
+.satisfaction-card {
+    background-color: #f9f9f9; /* Cor de fundo suave */
+    border: 1px solid #ccc; /* Borda cinza clara */
+    border-radius: 8px; /* Bordas arredondadas */
+    margin: 10px; /* Margem entre os cards */
+    padding: 15px; /* Espaçamento interno */
+    width: 300px; /* Largura fixa */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: transform 0.2s; /* Transição suave para hover */
+  }
+  
+  .satisfaction-card:hover {
+    transform: scale(1.05); /* Aumenta um pouco o card ao passar o mouse */
+  }
+  
+  .satisfaction-card h2 {
+    font-size: 20px; /* Tamanho da fonte do título */
+    color: #333; /* Cor do texto do título */
+    margin-bottom: 10px; /* Margem inferior */
+  }
+  
+  .satisfaction-card p {
+    font-size: 16px; /* Tamanho da fonte dos parágrafos */
+    color: #666; /* Cor do texto */
+    margin: 5px 0; /* Margens superior e inferior */
+  }
+  

@@ -1,6 +1,6 @@
-// src/SatisfactionsCards.js
 import React from 'react';
-import SatisfactionsCards from './components/SatisfactionsCards';
+import './SatisfactionsCards.css'; // arrumar aqui depois ( nao sei se esta certo)
+import SatisfactionsCards from './SatisfactionsCards.jsx';
 
 const SatisfactionsCards = ({ _id, userId, overallSatisfaction, date }) => {
   return (
@@ -8,12 +8,13 @@ const SatisfactionsCards = ({ _id, userId, overallSatisfaction, date }) => {
       <h2>ID: {_id}</h2>
       <p>User ID: {userId}</p>
       <p>Satisfação Geral: {overallSatisfaction}</p>
-      <p>Data: {new Date(date).toLocaleDateString()}</p> {/* Formata a data */}
+      <p>Data: {new Date(date).toLocaleDateString()}</p>
     </div>
   );
 };
 
 export default SatisfactionsCards;
+
 console.log('Rendering SatisfactionsCards with:', { _id, userId, overallSatisfaction, date });
 
 satisfactions.map((satisfaction) => {
