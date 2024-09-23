@@ -1,26 +1,37 @@
 .satisfaction-card {
-    background-color: #f9f9f9; 
-    border-radius: 8px; 
-    margin: 10px; 
-    padding: 15px; 
-    width: 300px; 
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
-    transition: transform 0.2s;
-  }
-  
-  .satisfaction-card:hover {
-    transform: scale(1.05);
-  }
-  
-  .satisfaction-card h2 {
-    font-size: 20px;
-    color: #333;
-    margin-bottom: 10px;
-  }
-  
-  .satisfaction-card p {
-    font-size: 16px;
-    color: #666;
-    margin: 5px 0;
-  }
-  
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 15px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  max-width: 400px;
+}
+
+.satisfaction-card:hover {
+  transform: scale(1.02);
+}
+
+.satisfaction-header {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.satisfaction-details {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.satisfaction-date {
+  font-size: 14px;
+  color: #777;
+  margin-top: 10px;
+}
+
+.satisfaction-card p {
+  margin: 0;
+}
