@@ -1,7 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import axios from 'axios';
 import './App.css';
-import SatisfactionsCards from './components/SatisfactionsCards';
 
 export default function App() {
   const [satisfactions, setSatisfactions] = useState([]);
@@ -11,7 +10,7 @@ export default function App() {
   useEffect(() => {
     const loadSatisfactions = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/satisfaction');
+        const response = await axios.get('https://projeto-final-m4-pda.onrender.com/satisfactions');
         setSatisfactions(response.data.satisfaction);
         setLoading(false);
       } catch (error) {

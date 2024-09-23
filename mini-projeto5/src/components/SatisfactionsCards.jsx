@@ -1,10 +1,11 @@
 import React from 'react';
 import './SatisfactionsCards.css'; // arrumar aqui depois ( nao sei se esta certo)
-import SatisfactionsCards from './SatisfactionsCards.jsx';
+SatisfactionsCards from './SatisfactionsCards.jsx';
 
-const SatisfactionsCards = ({ _id, userId, overallSatisfaction, date }) => {
+const SatisfactionsCard = ({ _id, userId, overallSatisfaction, date }) {
+  
   return (
-    <div className='satisfaction-card'>
+    <div className={styles.satisfaction-card}>
       <h2>ID: {_id}</h2>
       <p>User ID: {userId}</p>
       <p>Satisfação Geral: {overallSatisfaction}</p>
